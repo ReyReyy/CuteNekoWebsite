@@ -16,6 +16,27 @@
             color: white;
             font-family: 'Arial', sans-serif;
         }
+        .image-container {
+            width: 500px;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.2s;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.05); /* 鼠标悬停时放大 */
+            transition: transform 0.2s;
+        }
+
+        .image-container:active img {
+            transform: scale(1); /* 鼠标按下时缩小 */
+            transition: transform 0.1s;
+        }
         h1 {
             font-family: 'Times New Roman', serif;
             color: #FFFFFF;
@@ -36,7 +57,7 @@
 <body>
 
     <h1>just a cute cat ₍˄·͈༝·͈˄*₎◞ ̑̑</h1>
-    <img src="Pictures/Rabbicat_Rounded.png" alt="Rabbicat!" class="shrinkToFit" width="448" height="450">
+    <div class="image-container"><img src="Pictures/Rabbicat_Rounded_Transparent_Coner.png" alt="Rabbicat!"></div>
     <p class="footer"><a href="https://www.reyreyy.net/" style="color:#303030;">Ciallo～(∠・ω< )⌒★</a></p>
 
 </body>

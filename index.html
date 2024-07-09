@@ -35,6 +35,17 @@
         .image-container:active img {
             transform: scale(1); /* 鼠标按下时缩小 */
         }
+
+        @media only screen and (max-width: 600px) {
+            .image-container img {
+                transition: none; /* 在小屏幕上禁用过渡效果 */
+            }
+
+            .image-container:hover img,
+            .image-container:active img {
+                transform: none; /* 在小屏幕上禁用放大和缩小效果 */
+            }
+        }
         h1 {
             font-family: 'Times New Roman', serif;
             color: #FFFFFF;
